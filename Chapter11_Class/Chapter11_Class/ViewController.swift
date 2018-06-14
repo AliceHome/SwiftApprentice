@@ -8,6 +8,10 @@
 
 import UIKit
 
+struct Employee1 {
+    let name: String
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
@@ -16,6 +20,12 @@ class ViewController: UIViewController {
         
         let p:Person = Person(firstName: "Erik", lastName: "Keber")
         print(p.fullName)
+        
+        var var1:Employee = Employee(name: "Jack")
+        
+        var var2 = var1
+        
+        var var1 = Employee1(name: "Jack")
     }
 
     override func didReceiveMemoryWarning() {
